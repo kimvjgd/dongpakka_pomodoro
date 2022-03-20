@@ -5,15 +5,15 @@ import 'package:intro_slider/scrollbar_behavior_enum.dart';
 import 'package:intro_slider/slide_object.dart';
 
 
-class IntroPage extends StatefulWidget {
-  IntroPage({Key? key}) : super(key: key);
+class IntroducePage extends StatefulWidget {
+  IntroducePage({Key? key}) : super(key: key);
 
   @override
-  IntroPageState createState() => new IntroPageState();
+  IntroducePageState createState() => new IntroducePageState();
 }
 
 // ------------------ Custom config ------------------
-class IntroPageState extends State<IntroPage> {
+class IntroducePageState extends State<IntroducePage> {
 
   List<Slide> slides = [];
 

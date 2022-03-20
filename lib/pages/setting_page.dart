@@ -27,7 +27,7 @@ class _SettingPageState extends State<SettingPage> {
         _divider,
         //
         _CategorySeparator('우리 앱?'),
-        _gotoAnotherPage('앱 소개', IntroPage()),
+        _gotoAnotherPage('앱 소개', IntroducePage()),
         _divider,
         _textBox('Version 1.0'),
       ],
