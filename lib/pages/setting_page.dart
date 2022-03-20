@@ -33,6 +33,26 @@ class _SettingPageState extends State<SettingPage> {
       ],
     ),);
   }
+
+  Container _gotoAnotherPage(String title, Widget widget) {
+    return Container(
+      color: Colors.white,
+      child: ListTile(
+        onTap: () {
+          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => widget));
+        },
+        title: Text(
+          title,
+          style: TextStyle(
+              fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black),
+        ),
+        dense: true,
+        contentPadding: EdgeInsets.symmetric(horizontal: 10),
+        minVerticalPadding: 0,
+      ),
+    );
+  }
+
 }
 
 Container _CategorySeparator(String title) {
@@ -70,24 +90,6 @@ Container _textBox(String title) {
         title,
         style: TextStyle(
             fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black38),
-      ),
-      dense: true,
-      contentPadding: EdgeInsets.symmetric(horizontal: 10),
-      minVerticalPadding: 0,
-    ),
-  );
-}
-Container _gotoAnotherPage(String title, Widget widget) {
-  return Container(
-    color: Colors.white,
-    child: ListTile(
-      onTap: () {
-        // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => widget));
-      },
-      title: Text(
-        title,
-        style: TextStyle(
-            fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black),
       ),
       dense: true,
       contentPadding: EdgeInsets.symmetric(horizontal: 10),
